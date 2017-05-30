@@ -27,7 +27,7 @@ void leetspeak(char *str, int size)
 				printf("8");
 				break;
 			case 'f':
-				printf("ƒ");
+				printf("Æ’");
 				break;
 			case 'g':
 				printf("6");
