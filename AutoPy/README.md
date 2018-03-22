@@ -8,10 +8,11 @@ The tool was written in C langage.
 
 ## Images
 
-This is the main screen of AutoPy
+### This is the main screen of AutoPy
+
 ![Main](https://image.noelshack.com/fichiers/2018/12/4/1521751002-autopy1.jpg)
 
-Here is the settings screen
+### Here is the settings screen
 
 ![Settings](https://image.noelshack.com/fichiers/2018/12/4/1521751058-autopy2.jpg)
 
