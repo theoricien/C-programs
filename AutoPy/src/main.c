@@ -108,7 +108,8 @@ main (int argc, char *argv[])
     memset(python_path, '\0', PATH_MAX + 1 + PATH_MAX);
 
     fgets(python_path, PATH_MAX, config);
-    python_path[strlen(python_path)-1] = '\0';
+    if (python_path[strlen(python_path)-1] == '\n')
+        python_path[strlen(python_path)-1] = '\0';
 
     char file_path[PATH_MAX];
 
@@ -146,6 +147,9 @@ main (int argc, char *argv[])
             exit(-1);
         }
         memset(file_path, '\0', PATH_MAX);
+        memset(python_path, '\0', PATH_MAX + 1 + PATH_MAX);
+        fgets(python_path, PATH_MAX, config);
+        python_path[strlen(python_path)-1] = '\0';
     }
     fclose(config);
     free(program_path);
